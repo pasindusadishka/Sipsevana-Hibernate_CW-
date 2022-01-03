@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateDashBord" prefHeight="638.0" prefWidth="904.0" style="-fx-background-color: #7f8c8d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateViewController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="54.0" onAction="#studentToChangeOnAction" prefHeight="38.0" prefWidth="105.0" styleClass="studentButton" stylesheets="@../assets/css/updateStyles.css" text="Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="775.0" layoutY="54.0" onAction="#programeToOnAction" prefHeight="38.0" prefWidth="115.0" styleClass="courseButton" stylesheets="@../assets/css/updateStyles.css" text="Program" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="199.0" layoutY="28.0" text="Update Details" underline="true">
+         <font>
+            <Font name="Manjari Regular" size="46.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="changeContent" layoutX="3.0" layoutY="112.0" prefHeight="512.0" prefWidth="894.0" style="-fx-background-color: #7f8c8d;">
+         <children>
+            <ImageView fitHeight="512.0" fitWidth="605.0" layoutX="137.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/updateMain.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="10.0" onAction="#backOnAction" styleClass="backButton" stylesheets="@../assets/css/updateStyles.css" text="&lt;--Back" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

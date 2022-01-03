@@ -1,0 +1,39 @@
+.studentButton{
+    -fx-background-color: #378a37;
+}
+
+.studentButton:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.courseButton{
+    -fx-background-color: #b07506;
+}
+
+.courseButton:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.updateButton{
+    -fx-background-color: #b6b604;
+}
+
+.updateButton:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.backButton{
+    -fx-background-color: gray;
+}
+
+.backButton:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}

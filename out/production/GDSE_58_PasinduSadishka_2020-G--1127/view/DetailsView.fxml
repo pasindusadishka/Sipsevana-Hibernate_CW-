@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainDetailsContent" prefHeight="687.0" prefWidth="792.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailsViewController">
+   <children>
+      <Label layoutX="307.0" layoutY="14.0" text="Details" underline="true">
+         <font>
+            <Font name="Cambria Math" size="48.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="changeDetailContent" layoutX="24.0" layoutY="129.0" prefHeight="537.0" prefWidth="750.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="520.0" fitWidth="742.0" layoutX="122.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/detailsMain.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="539.0" layoutY="68.0" onAction="#selectStudentOnAction" styleClass="studentButton" stylesheets="@../assets/css/updateStyles.css" text="Student" textFill="#ebe9e9">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="656.0" layoutY="68.0" onAction="#selectProgramOnAction" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Program" textFill="#f8f3f3">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="8.0" onAction="#backOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="backButton" stylesheets="@../assets/css/updateStyles.css" text="&lt;--Back" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

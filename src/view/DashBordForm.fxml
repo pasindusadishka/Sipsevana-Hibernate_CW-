@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardFormDescription" prefHeight="722.0" prefWidth="962.0" style="-fx-background-color: #7f8c8d; -fx-background-radius: 12; -fx-border-color: Black; -fx-border-radius: 12; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBordFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="251.0" onMouseClicked="#registerClickOnAction" prefHeight="214.0" prefWidth="211.0" stylesheets="@../assets/css/styleLogin.css" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="255.0" onMouseClicked="#showDetailsClickOnAction" prefHeight="207.0" prefWidth="211.0" stylesheets="@../assets/css/styleLogin.css" text=" " />
+      <JFXButton buttonType="RAISED" layoutX="373.0" layoutY="255.0" onMouseClicked="#updateClickOnAction" prefHeight="207.0" prefWidth="211.0" stylesheets="@../assets/css/styleLogin.css" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="#2ecc71" glyphName="USERS" size="120" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="276.0" layoutY="22.0" prefHeight="81.0" prefWidth="448.0" text="Sipsewana Institute" textFill="#fafafa">
+         <font>
+            <Font name="Manjari Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="690.0" text="Version 1.0.1.0.2" textFill="#fcf5f5" />
+      <Label layoutX="317.0" layoutY="570.0" text="Need Help? Check out the Employee Guid here!" textFill="#f2f0f0" />
+      <FontAwesomeIconView glyphName="LIST" layoutX="676.0" layoutY="403.0" size="120" />
+      <FontAwesomeIconView fill="#3498db" glyphName="USER_PLUS" layoutX="134.0" layoutY="404.0" size="150" />
+      <ImageView fitHeight="97.0" fitWidth="87.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../cb92f275d0910e502bfbffdba4bddfd1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

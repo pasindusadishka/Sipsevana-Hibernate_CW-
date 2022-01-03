@@ -1,0 +1,43 @@
+.buttonAddCourses{
+    -fx-background-color: lightgreen;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+
+.buttonAddCourses:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.buttonRemoveCourses{
+    -fx-background-color: #ee5858;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+
+.buttonRemoveCourses:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.student{
+    -fx-background-color: orange;
+}
+
+.student:hover{
+    -fx-cursor: hand;
+    -fx-border-color: black;
+}
+
+.program{
+    -fx-background-color: #b25858;
+}
+
+.program:hover{
+    -fx-cursor: hand;
+    -fx-border-color: black;
+}

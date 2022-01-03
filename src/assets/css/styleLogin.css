@@ -1,0 +1,12 @@
+.button{
+    -fx-background-radius: 100%;
+    -fx-background-color: #eaebe6;
+    -fx-border-radius: 100%;
+}
+
+.button:hover{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffa5;
+    -fx-cursor: hand;
+}

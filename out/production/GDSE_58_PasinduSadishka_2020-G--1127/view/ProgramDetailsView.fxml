@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="programDetailContent" prefHeight="635.0" prefWidth="773.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProgramDetailsViewController">
+   <children>
+      <Label layoutX="39.0" layoutY="25.0" prefHeight="38.0" prefWidth="287.0" text="Programs Details" underline="true">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="189.0" text="Program Id :" textFill="#f8f6f6">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="270.0" text="Program Name :" textFill="#fffbfb">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="346.0" text="Program Duration : " textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="427.0" text="Program Fee  : " textFill="#fffafa">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtProgramName" editable="false" layoutX="193.0" layoutY="267.0" prefHeight="31.0" prefWidth="502.0" />
+      <TextField fx:id="txtProgramDuration" editable="false" layoutX="193.0" layoutY="347.0" prefHeight="31.0" prefWidth="502.0" />
+      <TextField fx:id="txtProgramFee" editable="false" layoutX="193.0" layoutY="427.0" prefHeight="31.0" prefWidth="502.0" />
+      <JFXButton buttonType="RAISED" layoutX="560.0" layoutY="544.0" onAction="#clearOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Clear" textFill="#fcf8f8">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="cmbProgramId" labelFloat="true" layoutX="193.0" layoutY="185.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="502.0" promptText="SelectProgram" />
+   </children>
+</AnchorPane>

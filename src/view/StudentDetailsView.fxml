@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="537.0" prefWidth="750.0" style="-fx-background-color: #7f8c8d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentDetailsViewController">
+   <children>
+      <Label layoutX="20.0" layoutY="19.0" prefHeight="50.0" prefWidth="251.0" text="Student Details" textFill="#f8f6f6" underline="true">
+         <font>
+            <Font name="Manjari Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="130.0" prefHeight="34.0" prefWidth="44.0" text="Id  :" textFill="#f8f6f6" />
+      <Label layoutX="29.0" layoutY="184.0" prefHeight="34.0" prefWidth="72.0" text="Name  :" textFill="#f8f6f6" />
+      <Label layoutX="28.0" layoutY="377.0" prefHeight="34.0" prefWidth="72.0" text="Gender  :" textFill="#f8f6f6" />
+      <Label layoutX="15.0" layoutY="246.0" prefHeight="34.0" prefWidth="88.0" text="Address  :" textFill="#f8f6f6" />
+      <Label layoutX="25.0" layoutY="309.0" prefHeight="34.0" prefWidth="78.0" text="Contact  :" textFill="#f8f6f6" />
+      <TextField fx:id="txtName" editable="false" layoutX="101.0" layoutY="188.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtAddress" editable="false" layoutX="101.0" layoutY="249.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtContact" editable="false" layoutX="101.0" layoutY="312.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtGender" editable="false" layoutX="101.0" layoutY="381.0" prefHeight="31.0" prefWidth="370.0" />
+      <TableView fx:id="tblPrograms" layoutX="498.0" layoutY="177.0" prefHeight="249.0" prefWidth="236.0">
+         <columns>
+            <TableColumn fx:id="colProgramsName" editable="false" prefWidth="233.0" text="Programs" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="576.0" layoutY="494.0" onAction="#clearOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Clear" textFill="#e8e8e8">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="cmbStudent" labelFloat="true" layoutX="104.0" layoutY="132.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="370.0" promptText="Select Id" />
+      <Label layoutX="578.0" layoutY="3.0" prefHeight="31.0" prefWidth="60.0" text="RegNo :" textFill="#f8f6f6" />
+      <Label fx:id="lblRegNumber" alignment="CENTER" layoutX="652.0" layoutY="2.0" prefHeight="34.0" prefWidth="88.0" style="-fx-border-color: black; -fx-background-radius: 25; -fx-border-radius: 25;" />
+   </children>
+</AnchorPane>
